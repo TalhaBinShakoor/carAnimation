@@ -1,0 +1,75 @@
+body {
+  overflow: hidden;
+}
+
+.background img {
+  height: 99.46vh;
+  position: absolute;
+  animation: backgroundMove 4s;
+}
+
+.carWhole {
+  position: absolute;
+  animation: car_and_Tyre_Move 4s;
+}
+
+.car {
+  position: absolute;
+  top: 45vh;
+  left: 19vh;
+}
+
+.car img {
+  position: absolute;
+  width: 60vh;
+}
+.tyre1 {
+  position: absolute;
+}
+.tyre1 img {
+  position: relative;
+  width: 12vh;
+  top: 76.5vh;
+  left: 25.19vh;
+  animation: tyreRotation linear 3s;
+}
+.tyre2 {
+  position: absolute;
+}
+.tyre2 img {
+  position: relative;
+  width: 12vh;
+  top: 76.5vh;
+  left: 61.93vh;
+  animation: tyreRotation linear 3s;
+}
+
+/* ************** Animations ************* */
+@keyframes tyreRotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes backgroundMove {
+  from {
+    transform: translate(0vw);
+  }
+  to {
+    transform: translate(-46vw);
+  }
+}
+
+@keyframes car_and_Tyre_Move {
+  from {
+    transform: translate(0vw);
+  }
+  to {
+    transform: translate(36vw);
+  }
+}
+
+/* HTML5 Audio Display Hidden */
+.audio {
+  visibility: hidden;
+}
